@@ -4,7 +4,7 @@ defineProps<{ type: "info" | "success"; text: string }>();
 
 <template>
   <div
-    class="flex items-center justify-center rounded-full py-4 w-52 bg-gradient-to-r text-xl text-red cursor-pointer text-white shadow-lg"
+    class="flex items-center justify-center rounded-full py-3 w-52 bg-gradient-to-r text-xl text-red cursor-pointer text-white shadow-lg"
     :class="
       type === 'success'
         ? 'from-[#7ED321] to-[#5FA315]'

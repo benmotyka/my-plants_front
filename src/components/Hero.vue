@@ -4,18 +4,23 @@ import Button from "./Button.vue";
 
 <template>
   <header
-    class="flex items-center justify-center flex-col h-[600px] bg-fixed bg-center bg-cover background-image gap-y-4"
+    class="flex items-center justify-center flex-col h-[600px] bg-fixed bg-center bg-cover background-image gap-y-4 relative pb-24"
   >
     <img src="/icon.png" />
     <h1 class="text-white text-4xl">My plants</h1>
 
-    <h5 class="text-white">
+    <h5 class="text-white text-xl">
       Free and open source mobile app to track watering of your plants
     </h5>
-    <div class="flex items-center justify-center mt-8 gap-x-6" >
-      <Button type="success" text="Discover"/>
-      <Button type="info" text="Download now"/>
+    <div class="flex items-center justify-center mt-8 gap-x-6">
+      <Button type="success" text="Discover" />
+      <Button type="info" text="Download now" />
     </div>
+    <div class="flex items-center justify-center cursor-pointer mt-4 gap-x-2">
+    <img src="/hero/play.png" />
+    <p class="text-white">Watch the video</p>
+    </div>
+    <img src="/hero/phone.png" class="absolute -bottom-20 w-[800px] " />
   </header>
 </template>
 
