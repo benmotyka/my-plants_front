@@ -20,7 +20,7 @@ import Button from "./Button.vue";
     <img src="/hero/play.png" />
     <p class="text-white">Watch the video</p>
     </div>
-    <img src="/hero/phone.png" class="absolute -bottom-20 w-[800px] " />
+    <img src="/hero/phone.png" class="absolute -bottom-40 w-[1000px] z-[10]" />
   </header>
 </template>
 
