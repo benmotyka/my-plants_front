@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Button from "./Button.vue";
+import BasicButton from "../atoms/BasicButton.vue";
+import WatchButton from "../atoms/WatchButton.vue";
 </script>
 
 <template>
@@ -13,13 +14,10 @@ import Button from "./Button.vue";
       Free and open source mobile app to track watering of your plants
     </h5>
     <div class="flex items-center justify-center mt-8 gap-x-6">
-      <Button type="success" text="Discover" />
-      <Button type="info" text="Download now" />
+      <BasicButton type="success" text="Discover" />
+      <BasicButton type="info" text="Download now" />
     </div>
-    <div class="flex items-center justify-center cursor-pointer mt-4 gap-x-2">
-    <img src="/hero/play.png" />
-    <p class="text-white">Watch the video</p>
-    </div>
+    <WatchButton/>
     <img src="/hero/phone.png" class="absolute -bottom-40 w-[1000px] z-[10]" />
   </header>
 </template>
