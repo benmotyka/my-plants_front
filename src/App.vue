@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import AOS from "aos";
+import { onMounted } from "vue";
+
 import Hero from "./components/organisms/Hero.vue";
 import About from "./components/organisms/About.vue";
-import { onMounted } from "vue";
-import AOS from "aos";
+import Footer from "./components/organisms/Footer.vue";
 
 onMounted(() => {
   AOS.init({
@@ -17,4 +19,5 @@ onMounted(() => {
 <template>
   <Hero />
   <About />
+  <Footer />
 </template>

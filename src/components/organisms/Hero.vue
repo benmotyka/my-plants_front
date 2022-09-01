@@ -5,7 +5,7 @@ import WatchButton from "../atoms/WatchButton.vue";
 
 <template>
   <header
-    class="flex items-center justify-center flex-col h-[600px] bg-fixed bg-center bg-cover background-image gap-y-4 relative pb-24">
+    class="flex items-center justify-center flex-col h-[800px] bg-center bg-cover background-image gap-y-4 relative pb-24">
     <img src="/icon.png" />
     <h1 class="text-white text-4xl">My plants</h1>
 
