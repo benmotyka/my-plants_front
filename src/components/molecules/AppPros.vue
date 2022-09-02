@@ -23,7 +23,7 @@ const itemsData = [
     
 <template>
     <div class="flex items-center py-10">
-        <PreviewItem v-for="item in itemsData" :header="item.header" :description="item.description"
-            :img-src="item.imgSrc" data-aos="zoom-in"/>
+        <PreviewItem v-for="item, key in itemsData" :header="item.header" :description="item.description"
+            :img-src="item.imgSrc" data-aos="zoom-in" :data-aos-delay="key * 200"/>
     </div>
 </template>

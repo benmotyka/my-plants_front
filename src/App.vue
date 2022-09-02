@@ -18,6 +18,6 @@ onMounted(() => {
 
 <template>
   <Hero />
-  <About />
+  <About/>
   <Footer />
 </template>
