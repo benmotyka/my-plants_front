@@ -17,12 +17,14 @@ const footerSections = [
 </script>
 
 <template>
-    <footer class="w-full h-20 bg-[#0007] mt-auto flex justify-between">
-        <div v-for="section in footerSections" class="flex px-60 gap-x-10">
+    <footer class="w-full h-20 bg-[#0007] mt-auto flex justify-center">
+        <div class="h-full w-full flex justify-between max-w-screen-lg px-10">
+        <div v-for="section in footerSections" class="flex px-2 gap-x-10">
             <p v-for="items in section"
                 class="flex items-center text-slate-200 cursor-pointer hover:text-slate-100 transition duration-150 ease-out ">
                 {{ items.text }}
             </p>
         </div>
+    </div>
     </footer>
 </template>

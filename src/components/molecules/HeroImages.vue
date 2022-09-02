@@ -4,5 +4,5 @@
     <img src="/hero/leaf_3.png" class=" absolute bottom-0 z-[4]" data-aos="fade-down" data-aos-delay="600"
         data-aos-offset="0" />
     <img src="/hero/phone.png" class="absolute -bottom-40 w-[1000px] z-[2]" data-aos="fade-up" data-aos-delay="600"
-        data-aos-offset="0" />
+        data-aos-offset="-100" />
 </template>
