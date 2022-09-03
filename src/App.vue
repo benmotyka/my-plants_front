@@ -5,6 +5,7 @@ import { onMounted } from "vue";
 import Hero from "./components/organisms/Hero.vue";
 import About from "./components/organisms/About.vue";
 import Footer from "./components/organisms/Footer.vue";
+import AppFeatures from "./components/organisms/AppFeatures.vue";
 
 onMounted(() => {
   AOS.init({
@@ -19,5 +20,6 @@ onMounted(() => {
 <template>
   <Hero />
   <About/>
+  <AppFeatures />
   <Footer />
 </template>
