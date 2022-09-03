@@ -5,7 +5,7 @@ const itemsAnimationDelay = 300
 const itemsData = [
   {
     header: 'One place to keep them all',
-    description: 'Friendly and simple user interface. Create account and add your plants. No verification needed',
+    description: 'Friendly and simple user interface. Create account and add your plants. Verification is not needed',
     imgSrc: '/about/mobile-app.png'
   },
   {
@@ -35,6 +35,6 @@ const itemsData = [
     <footer class="text-gray-600 text-lg" data-aos="fade" data-aos-delay="1000">Interested in more?
       <a class="text-cyan-700 cursor-pointer" href="#app-features">View all features</a>
     </footer>
-    <img src="/about/waves.png" class="w-full ">
+    <img src="/about/waves.png" class="w-full min-h-[400px] object-cover">
   </section>
 </template>
