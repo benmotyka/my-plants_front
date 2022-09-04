@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { FeatureSlide } from '../../interfaces/AppFeatures';
 import AppFeaturesList from "../molecules/AppFeaturesList.vue";
+import AppFeaturesCounter from "../molecules/AppFeaturesCounter.vue";
 
 const itemsData: FeatureSlide[] = [
   {
@@ -34,14 +36,52 @@ const itemsData: FeatureSlide[] = [
         }
     ]
   },
+  {
+    imgSrc: '/appFeatures/screenshot_2.png',
+    itemsLeft: [
+        {
+            header: 'Dashboard management 7',
+            description: 'Lorem ipsum'
+        },
+        {
+            header: 'Dashboard management8',
+            description: 'Lorem ipsum'
+        },
+        {
+            header: 'Dashboard management 9',
+            description: 'Lorem ipsum'
+        }
+    ],
+    itemsRight: [
+        {
+            header: 'Dashboard management 10',
+            description: 'Lorem ipsum'
+        },
+        {
+            header: 'Dashboard management 11',
+            description: 'Lorem ipsum'
+        },
+        {
+            header: 'Dashboard management 12',
+            description: 'Lorem ipsum'
+        }
+    ]
+  },
 ]
-let slideIndex = 0;
+let slideIndex = ref(0)
+
+const handleCounter = (newCounter: number) => {
+    if (newCounter < 0 || newCounter > itemsData.length - 1) return
+    slideIndex.value = newCounter
+}
+
 </script>
 
 <template>
     <section id="app-features" class="flex flex-col items-center pb-60 pt-20" data-aos="fade">
-        <h2 class="text-4xl text-gray-600" data-aos="fade">App features</h2>
-        <main class="grid grid-cols-[1fr_max-content_1fr]  relative w-full mt-12 gap-x-20 ">
+        <h2 class="text-4xl text-gray-600 mb-6" data-aos="fade">App features</h2>
+        <AppFeaturesCounter :counter="slideIndex" @changeCounter="(newCounter) => handleCounter(newCounter)" />
+        <main class="grid grid-cols-1 md:grid-cols-[1fr_max-content_1fr]   relative w-full mt-12 gap-x-20 ">
             <AppFeaturesList :items="itemsData[slideIndex].itemsLeft" align="right" />
             <img src="/appFeatures/screenshot_1.png" class="z-[2] mx-auto" />
             <AppFeaturesList :items="itemsData[slideIndex].itemsRight" align="left" />

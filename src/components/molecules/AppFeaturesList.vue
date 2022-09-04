@@ -14,7 +14,7 @@ const animationOffset = computed(() => (props.align === 'left' ? itemsAnimationA
 </script>
 
 <template>
-    <div class="grid grid-rows-3  pt-10" :class="align === 'right' ? 'text-right' : 'text-left'">
+    <div class="hidden md:grid grid-rows-3 h-4/5 pt-14" :class="align === 'right' ? 'text-right' : 'text-left'">
         <AppFeatureItem v-for="item, key in items" :header="item.header" :description="item.description"
             :key="item.header" data-aos="fade" :data-aos-delay="key * itemsAnimationDelay +  animationOffset" />
     </div>
