@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import PreviewItem from "../molecules/PreviewItem.vue";
 
+interface AboutItem {
+  header: string;
+  description: string;
+  imgSrc: string;
+}
+
 const itemsAnimationDelay = 300
-const itemsData = [
+const itemsData: AboutItem[] = [
   {
     header: 'One place to keep them all',
     description: 'Friendly and simple user interface. Create account and add your plants. Verification is not needed',
@@ -20,8 +26,6 @@ const itemsData = [
   },
 ]
 </script>
-
-<!-- linear-gradient(0deg, blue, green 40%, red); -->
 
 <template>
   <section id="about" class="flex items-center justify-center flex-col w-full pt-60 -mb-20
