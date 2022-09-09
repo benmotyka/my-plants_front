@@ -78,15 +78,15 @@ const handleCounter = (newCounter: number) => {
 </script>
 
 <template>
-    <section id="app-features" class="flex flex-col items-center pb-60 pt-20" data-aos="fade">
+    <section id="app-features" class="flex flex-col items-center pb-64 pt-20" data-aos="fade">
         <h2 class="text-4xl text-gray-600 mb-6" data-aos="fade">App features</h2>
         <AppFeaturesCounter :counter="slideIndex" @changeCounter="(newCounter) => handleCounter(newCounter)" />
-        <main class="grid grid-cols-1 md:grid-cols-[1fr_max-content_1fr]   relative w-full mt-12 gap-x-20 ">
+        <main class="grid grid-cols-1 sm:grid-cols-[1fr_max-content_1fr] relative w-full mt-12 lg:gap-x-20 gap-x-6 ">
             <AppFeaturesList :items="itemsData[slideIndex].itemsLeft" align="right" />
             <img src="/appFeatures/screenshot_1.png" class="z-[2] mx-auto" />
             <AppFeaturesList :items="itemsData[slideIndex].itemsRight" align="left" />
             <img src="/appFeatures/screenshot_effect.png"
-                class="absolute -bottom-44 w-full min-h-[200px] object-cover" />
+                class="absolute -bottom-64 w-full min-h-[250px] object-cover" />
         </main>
     </section>
 </template>

@@ -4,7 +4,7 @@ defineProps<{ header: string, description?: string  }>();
     
 <template>
     <div class="z-[2]">
-        <h5 class="text-slate-600 font-medium text-lg mb-3">{{header}}</h5>
+        <h5 class="text-slate-600 font-medium text-lg md:mb-3">{{header}}</h5>
         <p class="text-slate-500 font-normal text-sm">{{description}}</p>
     </div>
 </template>

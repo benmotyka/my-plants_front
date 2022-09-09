@@ -28,10 +28,10 @@ const itemsData: AboutItem[] = [
 </script>
 
 <template>
-  <section id="about" class="flex items-center justify-center flex-col w-full pt-60 -mb-20
+  <section id="about" class="flex items-center justify-center flex-col w-full sm:pt-60 pt-20 -mb-20
   bg-gradient-to-b from-[#E8EDFA] via-[#E8EDFA] to-[#fff]
   ">
-    <h2 class="text-4xl text-gray-600 text-center" data-aos="fade">Best tool for your plants</h2>
+    <h2 class="text-4xl text-gray-600 text-center px-4" data-aos="fade">Best tool for your plants</h2>
     <div class="flex justify-center flex-wrap  items-center py-10">
       <PreviewItem v-for="item, key in itemsData" :header="item.header" :description="item.description"
         :img-src="item.imgSrc" data-aos="zoom-in" :data-aos-delay="key * itemsAnimationDelay" />
