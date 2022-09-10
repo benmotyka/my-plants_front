@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Subfooter from "../molecules/Subfooter.vue"
 import FooterCategory, { ColorCategories } from "../molecules/FooterCategory.vue"
+import FooterSummary from "../molecules/FooterSummary.vue";
 
 interface FooterCategory {
     header: string;
@@ -29,8 +30,8 @@ const footerCategories: FooterCategory[] = [
 
 <template>
     <section class="flex flex-col background-image h-[450px] w-full bg-cover bg-center ">
-        <div class="py-20 px-40 h-full grid grid-cols-[2fr_1fr_1fr_1fr] gap-x-14">
-            <p>hej</p>
+        <div class="py-20 px-60 h-full grid grid-cols-[2fr_1fr_1fr_1fr] gap-x-14">
+            <FooterSummary />
             <FooterCategory v-for="category in footerCategories" :color="category.color" header="About us"
                 :items="category.items" />
         </div>
