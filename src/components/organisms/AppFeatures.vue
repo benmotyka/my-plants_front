@@ -83,7 +83,7 @@ const handleCounter = (newCounter: number) => {
         <AppFeaturesCounter :counter="slideIndex" @changeCounter="(newCounter) => handleCounter(newCounter)" />
         <main class="grid grid-cols-1 sm:grid-cols-[1fr_max-content_1fr] relative w-full mt-12 lg:gap-x-20 gap-x-6 ">
             <AppFeaturesList :items="itemsData[slideIndex].itemsLeft" align="right" />
-            <img src="/appFeatures/screenshot_1.png" class="z-[2] mx-auto" />
+            <img :src="itemsData[slideIndex].imgSrc" class="z-[2] mx-auto drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
             <AppFeaturesList :items="itemsData[slideIndex].itemsRight" align="left" />
             <img src="/appFeatures/screenshot_effect.png"
                 class="absolute -bottom-64 w-full min-h-[250px] object-cover" />

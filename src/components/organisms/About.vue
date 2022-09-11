@@ -11,12 +11,12 @@ const itemsAnimationDelay = 300
 const itemsData: AboutItem[] = [
   {
     header: 'One place to keep them all',
-    description: 'Friendly and simple user interface. Create account and add your plants. Verification is not needed',
+    description: 'Friendly and simple user interface. Create account and add your plants.',
     imgSrc: '/about/mobile-app.png'
   },
   {
     header: 'Set reminders',
-    description: 'Something that app can remind you of',
+    description: 'Never forget about watering your plant. See your plant\'s watering history.',
     imgSrc: '/about/reminder.png'
   },
   {
