@@ -36,7 +36,7 @@ const itemsData: AboutItem[] = [
       <PreviewItem v-for="item, key in itemsData" :header="item.header" :description="item.description"
         :img-src="item.imgSrc" data-aos="zoom-in" :data-aos-delay="key * itemsAnimationDelay" />
     </div>
-    <footer class="text-gray-600 text-lg" data-aos="fade" data-aos-delay="1000">Interested in more?
+    <footer class="text-gray-600 text-lg text-center" data-aos="fade" data-aos-delay="1000">Interested in more?
       <a class="text-cyan-700 cursor-pointer" href="#app-features">View all features</a>
     </footer>
     <img src="/about/waves.png" class="w-full min-h-[400px] object-cover">
