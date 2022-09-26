@@ -7,6 +7,7 @@ import About from "./components/organisms/About.vue";
 import AppFeatures from "./components/organisms/AppFeatures.vue";
 import ComingSoon from "./components/organisms/ComingSoon.vue";
 import Footer from "./components/organisms/Footer.vue";
+import Changelog from "./components/organisms/Changelog.vue";
 
 onMounted(() => {
   AOS.init({
@@ -22,6 +23,7 @@ onMounted(() => {
   <Hero />
   <About/>
   <AppFeatures />
+  <Changelog />
   <ComingSoon />
   <Footer />
 </template>

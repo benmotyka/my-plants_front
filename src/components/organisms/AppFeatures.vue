@@ -6,7 +6,7 @@ import AppFeaturesCounter from "../molecules/AppFeaturesCounter.vue";
 
 const itemsData: FeatureSlide[] = [
   {
-    imgSrc: '/appFeatures/screenshot_1.png',
+    imgSrc: '/app-features/screenshot_1.png',
     itemsLeft: [
         {
             header: 'Dashboard management 1',
@@ -37,7 +37,7 @@ const itemsData: FeatureSlide[] = [
     ]
   },
   {
-    imgSrc: '/appFeatures/screenshot_2.png',
+    imgSrc: '/app-features/screenshot_2.png',
     itemsLeft: [
         {
             header: 'Dashboard management 7',
@@ -85,7 +85,7 @@ const handleCounter = (newCounter: number) => {
             <AppFeaturesList :items="itemsData[slideIndex].itemsLeft" align="right" />
             <img :src="itemsData[slideIndex].imgSrc" class="z-[2] mx-auto drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
             <AppFeaturesList :items="itemsData[slideIndex].itemsRight" align="left" />
-            <img src="/appFeatures/screenshot_effect.png"
+            <img src="/app-features/screenshot_effect.png"
                 class="absolute -bottom-64 w-full min-h-[250px] object-cover" />
         </main>
     </section>

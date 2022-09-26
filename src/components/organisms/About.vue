@@ -21,7 +21,7 @@ const itemsData: AboutItem[] = [
   },
   {
     header: 'Completely free',
-    description: 'No subscription. No ads. Free and open-source. Forever.',
+    description: 'No subscription, registration or ads. Free and open-source. Forever.',
     imgSrc: '/about/price-tag.png'
   },
 ]
