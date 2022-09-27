@@ -60,7 +60,7 @@ const footerCategories: FooterCategory[] = [
 </script>
 
 <template>
-    <section class="flex flex-col background-image w-full bg-cover bg-center ">
+    <section class="flex flex-col background-image w-full bg-cover bg-center bg-fixed">
         <div class="py-20 px-10 sm:px-20 xl:px-60 h-full grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-14">
             <FooterSummary />
             <FooterCategory v-for="category in footerCategories" :color="category.color" :header="category.header"

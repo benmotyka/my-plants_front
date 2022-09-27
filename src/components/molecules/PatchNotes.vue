@@ -1,0 +1,10 @@
+<script setup lang="ts">
+defineProps<{ patch: number; changes: string[]; date: string; }>();
+</script>
+
+<template>
+    <h5 class="text-2xl pb-2 font-semibold border-b-2 border-[#FFFA] overflow-y-hidden">Patch {{patch}}</h5>
+    <ul class="list-disc flex flex-col gap-2">
+        <li v-for="item in changes" class="text-lg" :key="item">{{item}}</li>
+    </ul>
+</template>
