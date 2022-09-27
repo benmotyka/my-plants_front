@@ -21,20 +21,20 @@ const patchNotes: PatchNote[] = [
     },
     {
         patch: 1.01,
-        changes: ['added watering plants', 'changed something'],
+        changes: ['added watering plants', 'changed something', 'changed something', 'changed something', 'changed something'],
         createdAt: '2022-07-12'
     },
 ] 
 </script>
 
 <template>
-    <section id="changelog" class="w-full h-[500px] background-image bg-fixed bg-center bg-cover">
-        <main class="px-28 grid grid-cols-4 w-full h-full gap-12">
-            <div class="flex flex-col gap-8 justify-center">
+    <section id="changelog" class="w-full md:h-[500px] background-image bg-fixed bg-center bg-cover">
+        <main class="px-6 sm:px-10 xl:px-28 py-12 xl:pt-24 grid md:grid-cols-4 w-full gap-8 md:gap-4 xl:gap-12">
+            <div class="flex flex-col gap-8">
                 <h2 class="font-bold text-white text-4xl">Latest changes</h2>
                 <p class="font-normal text-white text-xl">See what changed in the recent app patches.</p>
             </div>
-            <div v-for="item in patchNotes" class="flex flex-col gap-4 justify-center pl-20 text-white text-large" :key="item.patch">
+            <div v-for="item in patchNotes" class="flex flex-col gap-4 md:pl-4 xl:pl-18 text-white text-large" :key="item.patch">
                 <PatchNotes :patch="item.patch" :changes="item.changes" :date="item.createdAt" />
             </div>
         </main>
