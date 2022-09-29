@@ -11,17 +11,17 @@ interface PatchNote {
 const patchNotes: PatchNote[] = [
     {
         patch: 1.03,
-        changes: ['added watering plants', 'changed something'],
+        changes: ['added watering plants', 'changed something', 'changed something'],
         createdAt: '2022-07-12'
     },
     {
         patch: 1.02,
-        changes: ['added watering plants', 'changed something'],
+        changes: ['added watering plants', 'changed something', 'changed something'],
         createdAt: '2022-07-12'
     },
     {
         patch: 1.01,
-        changes: ['added watering plants', 'changed something', 'changed something', 'changed something', 'changed something'],
+        changes: ['added watering plants', 'changed something', 'changed something'],
         createdAt: '2022-07-12'
     },
 ] 
@@ -32,7 +32,7 @@ const patchNotes: PatchNote[] = [
         <main class="px-6 sm:px-10 xl:px-28 py-12 xl:pt-24 grid md:grid-cols-4 w-full gap-8 md:gap-4 xl:gap-12">
             <div class="flex flex-col gap-8">
                 <h2 class="font-bold text-white text-4xl">Latest changes</h2>
-                <p class="font-normal text-white text-xl">See what changed in the recent app patches.</p>
+                <p class="font-normal text-white text-xl">Check for update details. See what changed in the recent app patches.</p>
             </div>
             <div v-for="item in patchNotes" class="flex flex-col gap-4 md:pl-4 xl:pl-18 text-white text-large" :key="item.patch">
                 <PatchNotes :patch="item.patch" :changes="item.changes" :date="item.createdAt" />

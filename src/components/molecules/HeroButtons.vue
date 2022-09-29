@@ -7,6 +7,8 @@ import BasicButton from "../atoms/BasicButton.vue";
         <a href="#about">
             <BasicButton type="success" text="Discover" />
         </a>
-        <BasicButton type="info" text="Download now" />
+        <a href="#download">
+            <BasicButton type="info" text="Download now" />
+        </a>
     </div>
 </template>

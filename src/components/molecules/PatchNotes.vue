@@ -7,4 +7,5 @@ defineProps<{ patch: number; changes: string[]; date: string; }>();
     <ul class="list-disc flex flex-col gap-2 pl-5">
         <li v-for="item in changes" class="text-lg" :key="item">{{item}}</li>
     </ul>
+    <p class="text-sm font-normal text-white opacity-70">{{date}}</p>
 </template>
