@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/benmotyka/my-plants_front">
-    <img src="readme/banner.svg" alt="Banner">
+    <img src="readme/banner.png" alt="Banner">
   </a>
   <h1 align="center">My Plants</h1>
   <h5 align="center">Website</h5>
