@@ -14,7 +14,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-    <section id="changelog" class="w-full md:h-[500px] background-image bg-fixed bg-center bg-cover">
+    <section id="changelog" class="w-full md:h-[400px] background-image bg-fixed bg-center bg-cover">
         <main class="px-6 sm:px-10 xl:px-28 py-12 xl:pt-24 grid md:grid-cols-4 w-full gap-8 md:gap-4 xl:gap-12">
             <div class="flex flex-col gap-8">
                 <h2 class="font-bold text-white text-4xl">Latest changes</h2>

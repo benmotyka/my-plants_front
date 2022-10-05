@@ -3,7 +3,7 @@ import links from "../../config/links"
 
 </script>
 <template>
-    <section id="download" class="flex w-full min-h-[800px] grid sm:grid-cols-2">
+    <section id="download" class="flex w-full min-h-[800px] grid sm:grid-cols-2 py-24">
         <main class="flex flex-col items-center justify-center gap-y-2 px-3 sm:px-10 text-center">
             <h2 class="text-4xl text-slate-500">Download now</h2>
             <h5 class="text-slate-500 text-lg font-normal">Short description</h5>
