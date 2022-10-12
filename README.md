@@ -8,7 +8,9 @@
   <h1 align="center">My Plants</h1>
   <h5 align="center">Website</h5>
   <p align="center">
-    <a href="https://harmonious-entremet-3dda15.netlify.app"><h4>Explore the page »</h4></a>
+    <a href="https://harmonious-entremet-3dda15.netlify.app"><strong>Explore the page »</strong></a>
+    <br />
+    <br />
     <a href="https://github.com/benmotyka/my-plants_front/issues">Report Bug</a>
     ·
     <a href="https://github.com/benmotyka/my-plants_front/issues">Request Feature</a>

@@ -9,22 +9,18 @@ const itemsData: FeatureSlide[] = [
     imgSrc: '/app-features/screenshot_1.png',
     itemsLeft: [
         {
-            header: 'Dashboard management 1',
-            description: 'Lorem ipsum'
+            header: 'Tap plant to see its watering and images history',
+            description: 'To see its watering and images history'
         },
         {
-            header: 'Dashboard management 2',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management 3',
-            description: 'Lorem ipsum'
+            header: 'Swipe',
+            description: 'to mark plant as watered'
         }
     ],
     itemsRight: [
         {
-            header: 'Dashboard management 4',
-            description: 'Lorem ipsum'
+            header: 'Hold plant',
+            description: 'To edit it'
         },
         {
             header: 'Dashboard management 5',
