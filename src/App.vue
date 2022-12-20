@@ -24,8 +24,8 @@ onMounted(() => {
   <Hero />
   <About/>
   <AppFeatures />
-  <Changelog />
   <Download />
+  <Changelog />
   <ComingSoon />
   <Footer />
 </template>
