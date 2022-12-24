@@ -1,3 +1,72 @@
 {
-    "applicationName": "My Plants"
+  "applicationName": "My Plants",
+  "subHeader": "Free and open source mobile app to track watering of your plants",
+  "discover": "Discover",
+  "downloadNow": "Download now",
+  "watchVideo": "Watch the video",
+  "summary": {
+    "header": "Best tool for your plants",
+    "item1": {
+      "header": "One place to keep them all",
+      "description": "Friendly and simple user interface. Create account and add your plants."
+    },
+    "item2": {
+      "header": "Set reminders",
+      "description": "Never forget about watering your plant. See your plant's watering history."
+    },
+    "item3": {
+      "header": "Completely free",
+      "description": "No subscription, registration or ads. Free and open-source. Forever."
+    },
+    "seeMore": "Interested in more?",
+    "viewFeatures": "View all features"
+  },
+  "features": {
+    "header": "App features",
+    "item1": {
+      "header": "Tap plant",
+      "description": "To see its watering and images history"
+    },
+    "item2": {
+      "header": "Hold plant",
+      "description": "To edit it"
+    },
+    "item3": {
+      "header": "Swipe slider",
+      "description": "To mark plant as watered"
+    }
+  },
+  "download": {
+    "header": "",
+    "description": ""
+  },
+  "patchNotes": {
+    "header": "Latest changes",
+    "description": "Check for update details. See what changed in the recent app patches."
+  },
+  "appleWatch": {
+    "header": "Coming soon to Apple Watch",
+    "description": ""
+  },
+  "footer": {
+    "description": "",
+    "section1": {
+      "header": "",
+      "item1": "",
+      "item2": "",
+      "item3": ""
+    },
+    "section2": {
+      "header": "",
+      "item1": "",
+      "item2": "",
+      "item3": ""
+    },
+    "section3": {
+      "header": "Source code",
+      "item1": "Mobile app",
+      "item2": "Front page",
+      "item3": "Server"
+    }
+  }
 }
