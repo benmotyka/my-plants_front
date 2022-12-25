@@ -42,14 +42,15 @@
   },
   "patchNotes": {
     "header": "Latest changes",
-    "description": "Check for update details. See what changed in the recent app patches."
+    "description": "Check for update details. See what changed in the recent app patches.",
+    "patch": "Patch {number}"
   },
   "appleWatch": {
     "header": "Coming soon to Apple Watch",
     "description": ""
   },
   "footer": {
-    "description": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "section1": {
       "header": "",
       "item1": "",

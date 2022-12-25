@@ -7,5 +7,4 @@
         <img src="/hero/phone.png"
             class="w-full min-h-[120px] drop-shadow-[0_50px_50px_rgba(0,64,0,0.5)] object-cover" />
     </div>
-
 </template>
