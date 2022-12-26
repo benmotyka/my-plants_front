@@ -1,68 +1,32 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n';
 import { FeatureSlide } from '../../interfaces/AppFeatures';
 import AppFeaturesList from "../molecules/AppFeaturesList.vue";
 import AppFeaturesCounter from "../molecules/AppFeaturesCounter.vue";
 
+const { t } = useI18n();
+
 const itemsData: FeatureSlide[] = [
-  {
-    imgSrc: '/app-features/screenshot_1.png',
-    itemsLeft: [
-        {
-            header: 'Tap plant to see its watering and images history',
-            description: 'To see its watering and images history'
-        },
-        {
-            header: 'Swipe',
-            description: 'to mark plant as watered'
-        }
-    ],
-    itemsRight: [
-        {
-            header: 'Hold plant',
-            description: 'To edit it'
-        },
-        {
-            header: 'Dashboard management 5',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management 6',
-            description: 'Lorem ipsum'
-        }
-    ]
-  },
-  {
-    imgSrc: '/app-features/screenshot_2.png',
-    itemsLeft: [
-        {
-            header: 'Dashboard management 7',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management8',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management 9',
-            description: 'Lorem ipsum'
-        }
-    ],
-    itemsRight: [
-        {
-            header: 'Dashboard management 10',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management 11',
-            description: 'Lorem ipsum'
-        },
-        {
-            header: 'Dashboard management 12',
-            description: 'Lorem ipsum'
-        }
-    ]
-  },
+    {
+        imgSrc: '/app-features/screenshot_1.png',
+        itemsLeft: [
+            {
+                header: t('features.item1.header'),
+                description: t('features.item1.description')
+            },
+            {
+                header: t('features.item2.header'),
+                description: t('features.item2.description')
+            }
+        ],
+        itemsRight: [
+            {
+                header: t('features.item3.header'),
+                description: t('features.item3.description')
+            },
+        ]
+    }
 ]
 let slideIndex = ref(0)
 

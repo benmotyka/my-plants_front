@@ -29,7 +29,7 @@
     },
     "item2": {
       "header": "Hold plant",
-      "description": "To edit it"
+      "description": "To edit its details or delete it"
     },
     "item3": {
       "header": "Swipe slider",
@@ -47,20 +47,20 @@
   },
   "appleWatch": {
     "header": "Coming soon to Apple Watch",
-    "description": ""
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   "footer": {
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "section1": {
-      "header": "",
+      "header": "Community",
       "item1": "",
       "item2": "",
       "item3": ""
     },
     "section2": {
-      "header": "",
-      "item1": "",
-      "item2": "",
+      "header": "Download",
+      "item1": "Android",
+      "item2": "iOS",
       "item3": ""
     },
     "section3": {

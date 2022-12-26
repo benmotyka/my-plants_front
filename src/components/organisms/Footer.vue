@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import Subfooter from "../molecules/Subfooter.vue"
 import FooterCategory, { ColorCategories } from "../molecules/FooterCategory.vue"
 import FooterSummary from "../molecules/FooterSummary.vue";
 import links from "../../config/links"
 import { FooterItem } from "../../interfaces/Footer"
 
+const { t } = useI18n();
 
 
 interface FooterCategory {
@@ -15,44 +17,44 @@ interface FooterCategory {
 
 const footerCategories: FooterCategory[] = [
     {
-        header: 'About us',
+        header: t('footer.section1.header'),
         color: 'green',
         items: [{
-            text: 'Mobile app',
+            text: t('footer.section1.item1'),
             link: links.github.app
         }, {
-            text: 'Front page',
+            text: t('footer.section1.item2'),
             link: links.github.front
         }, {
-            text: 'Server',
+            text: t('footer.section1.item3'),
             link: links.github.server
         }]
     },
     {
-        header: 'Help center',
+        header: t('footer.section2.header'),
         color: 'blue',
         items: [{
-            text: 'Mobile app',
+            text: t('footer.section2.item1'),
             link: links.github.app
         }, {
-            text: 'Front page',
+            text: t('footer.section2.item2'),
             link: links.github.front
         }, {
-            text: 'Server',
+            text: t('footer.section2.item3'),
             link: links.github.server
         }]
     },
     {
-        header: 'Source code',
+        header: t('footer.section3.header'),
         color: 'pink',
         items: [{
-            text: 'Mobile app',
+            text: t('footer.section3.item1'),
             link: links.github.app
         }, {
-            text: 'Front page',
+            text: t('footer.section3.item2'),
             link: links.github.front
         }, {
-            text: 'Server',
+            text: t('footer.section3.item3'),
             link: links.github.server
         }]
     },
