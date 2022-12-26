@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onBeforeMount } from 'vue'
+import { useI18n } from 'vue-i18n';
 
 import PatchNotes from "../molecules/PatchNotes.vue";
 import { PatchNote } from "../../interfaces/PatchNote";
@@ -8,7 +9,9 @@ import { getLastPatchNotes } from "../../api/plants";
 const patchNotes = ref<PatchNote[]>()
 
 onBeforeMount(async () => {
-    const result = await getLastPatchNotes()
+    const { locale } = useI18n();
+    const language = locale.value.split("-")[0]
+    const result = await getLastPatchNotes(language)
     patchNotes.value = result
 })
 </script>
